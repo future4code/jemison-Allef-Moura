@@ -1,0 +1,2 @@
+# Aprendizados da semana
+ Nessa semana obtive muito conhecimento, apesar de ter sido bem corrido por conta do meu trabalho, consegui focar e me senti muito preso as aulas **preso de uma forma boa** e com isso estou muito feliz de ter iniciado essa nova etapa da minha vida.
