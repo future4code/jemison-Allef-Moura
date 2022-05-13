@@ -35,7 +35,15 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
-  
+   function buscarNumerosPares (value) {
+      if (value % 2 == 0) 
+      return value;
+  }
+  var numerosPares = array.filter(buscarNumerosPares);
+  function elevado (item){
+      return Math.pow(item, 2) 
+  }
+   return numerosPares.map(elevado)
 }
 
 // EXERCÍCIO 06
@@ -47,7 +55,27 @@ function retornaMaiorNumero(array) {
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
+   var ativ = {
+      maiorNumero: 0,
+      maiorDivisivelPorMenor: false,
+      diferenca: 0 
+   }
+   if (num1 > num2){
+      ativ.maiorNumero = num1
+      if (num1 % num2 == 0 ){
+      ativ.maiorDivisivelPorMenor = true  
 
+      
+      }  
+     ativ.diferenca = num1 - num2 
+   }else {
+      ativ.maiorNumero = num2
+      if (num2 % num1 == 0 ){
+      ativ.maiorDivisivelPorMenor = true  
+ }  
+     ativ.diferenca = num2 - num1  
+   }  
+   return ativ 
 }
 
 // EXERCÍCIO 08
