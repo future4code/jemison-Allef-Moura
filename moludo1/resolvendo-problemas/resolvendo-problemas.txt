@@ -1,0 +1,20 @@
+1 - Ter atenção no enunciado.
+RESPOSTA: sempre focar a atenção no enunciado, porque muitas das vezes detalhes para montar o código está todo no enunciado.
+
+2 - Retirar informações relevantes.
+RESPOSTA: Aqui entra juntamente na atenção, pois as informações para montar o código sempre estão no enunciado.
+
+3 - Pensar Entradas e Saídas.
+RESPOSTA: Procurar e pensar quais serão os dados recebidos, e quais as possiveis respostas, sendo assim começar criando uma funcão com essas informações.
+
+4 - Fazer um esquema visual.
+RESPOSTA: Criar exemplos das situações apresentadas, montar diagramas com a lógica do código, e pensar em possiveis inputs(entradas) e outputs(saídas).
+
+5 - Criar um código feio.
+RESPOSTA: Usar alguma forma para passar as possiveis situações, desde um papel ou um bloco de notas, escolher as melhores soluções para a IDE e teste cada uma das soluções para ver se a resposta condiz com o que é pedido.
+
+6 - Testar: Força-Bruta
+RESPOSTA: soluções obvias, escrever o código no nosso idioma e depois trasncrever para a linguagem desejada.
+
+7 - Refatorar
+RESPOSTA: Famoso bons costumes, usando bons nomes para funções e variaveis, separar funcões e começar com as estapas principais.
