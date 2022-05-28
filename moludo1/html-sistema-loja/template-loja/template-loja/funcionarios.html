@@ -8,22 +8,72 @@
 </head>
 <body>
     <header>
-        <p>LABESHOP</p>
+        <link rel="stylesheet" type="text/css" href="func.css">
+        <p class="centralizar-texto"><span class="corA">LA</span><span class="corB">BE</span><span class="corC">SH</span><span class="corD">OP</span></p>
     </header>
     
-    <nav>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+    <nav class="centralizar-texto">
+        <a href="index.html"> <button  id="cor1" >Página Inicial</button></a>
+        <a href="ctrl-estoque.html"><button id="cor2">Controle de Estoque</button></a>
+        <a href="add-produto.html"><button id="cor3">Adicionar Produto</button></a>
+        <a href="funcionarios.html"><button id="cor4">Funcionários</button></a>
     </nav>
 
-    <h2>Funcionários</h2>
-        <ol>Naruto dos Santos, GERENTE</ol>
-        <ol>Satorogojo de Souza, VENDEDOR SENIOR</ol>
-        <ol>Tanjiro Pereira, VENDEDOR JUNIOR</ol>
-        <ol>Gon Friecs, ESTAGIÁRIO</ol>
-
+    <H2 class="centralizar-texto"> QUADRO DE FUNCIONÁRIOS</H2>
+    <table class="centralizar-texto">
+        <tr>
+            <th>FOTO</th>
+            <th>NOME</th>
+            <th>CARGO</th>
+            
+        </tr>
         
+        <tr>    
+        <td> <img src="imagens/naruto.webp" alt="foto-naruto" width="100" height="80"/> </td>
+        <td>Naruto dos Santos</td>
+        <td id="corlab">GERENTE</td>
+       </tr> 
+
+        <tr>
+            <td><img src="imagens/satoro gojo.jpg" alt="foto-gojo" width="100" height="80"/> </td>
+            <td>Satorogojo de Souza</td>
+            <td id="corlab2">VENDEDOR SENIOR</td>
+
+        </tr>
+
+        <tr>
+            <td> <img src="imagens/tanjiro.jpg" alt="foto-tanj" width="100" height="80"></td>
+            <td>Tanjiro Pereira</td>
+            <td id="corlab3">ESTÁGIARIO DE TI</td>
+        </tr>
+
+        <tr>
+            <td><img src="imagens/gon freecs.jpg" alt="foto-gon" width="100" height="80"></td>  
+            <td>Gon Moura</td>
+            <td id="corlab4">DESENVOLVEDOR JUNIOR</td>
+
+        </tr>
+    </table>
+    <footer>
+        <h2>Siga-nos nas redes sociais!</h2>
+        <table>
+        <a href="https://www.instagram.com/allef_a_/">
+        <tr>
+           <img src="imagens/instagram.png" width="90" height="90"/>
+        </tr>
+        </a>
+        <a href="https://www.facebook.com/andre.souza.733076/">
+        <tr>
+            <img src="imagens/facebook.png" width="90" height="90"/>
+        </tr>
+        </a>
+        <a href="https://www.linkedin.com/in/allef-andré-de-souza-moura-47331a237/">
+        <tr> 
+            <img src="imagens/linkedin.png" width="90" height="90"/>
+        </tr>
+        </a>
+    </table>
+    </footer>
 </body>
 </html>
+
