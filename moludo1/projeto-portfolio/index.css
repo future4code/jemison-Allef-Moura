@@ -13,6 +13,8 @@ button {
     font-family: Arial, sans-serif;
     text-decoration: none;
     color: #757575;
+    
+    
 }
 
 html, body {
@@ -158,6 +160,38 @@ body{
     color: rgb(0, 0, 0);
  }
 
+ /* main projeto */
+
+ .linha{
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: row wrap; */
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+    align-items: center;
+
+
+   
+    
+    
+}
+
+.coluna-50 {
+    width: 50%;
+}
+
+.coluna-502 {
+    width: 50%;
+}
+
+/* .imagem__projeto {
+    padding:0 100 0 0px;
+    
+} */
+
+
+
 
 
 /* Footer */
@@ -203,6 +237,15 @@ body{
     .content__logo {
         height: 150px;
     }
+    .divLeft {
+        height: 150px;
+    }
+    .linha {
+        flex-direction: row;
+        
+    }
+        
+    
 }
 
 .lyrics{
@@ -212,5 +255,74 @@ body{
     font-size: 20px;
     font-weight: 600;
     color: #2c6079;
+}
+.botao{
+    height: 20px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #5f6368;
+}
+.caixa__formulario{
+    height: 30px;
+    width: 300px;
+    border-radius: 4px;
+    border:  1px solid #5f6368;
+}
+.area__mensagem {
+    height: 130px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #5f6368;
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralizar {
+    width: 400px;
+}
+
+.centralziar2 {
+    width: 300px;
+}
+.textoinicial {
+    font-family: 'Arial, sans-serif';
+    font-size: 35px;
+    color: #303030;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
+.textoprojeto {
+    font-family: Arial, sans-serif;
+    color: rgb(87, 84, 84);
+    font-size: 20px;
+    margin: 10px 0 0 0px;
+    text-indent: 1cm;
+    text-align: justify; 
+}
+.itenstextoinicial {
+    font-family: Arial, sans-serif;
+    color: rgb(97, 91, 91);
+    font-size: 18px;
+    margin: 10px 0 0 0px;
+}
+.imagemportfolio {
+    
+    margin: 10px 40px;
+    border-radius: 15px;
+    
+
+}
+.alinhando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
