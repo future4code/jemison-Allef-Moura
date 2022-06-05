@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    padding: 10px 20px;
+    display: flex;
+    background: mediumvioletred;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+#imagem-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.titulo {
+    padding-right: 90%;
+}
+
+.icon__text {
+    display: flex;
+}
+.button {
+    border-radius: 1px;
+    padding: 4px 4px;
+}
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+.cardapio{
+    margin: 10px;
+    width: 300px;
+    text-align: justify;
+    height: 420px;
+    box-shadow: 10px 5px 5px darkgray;
+}
+
+.cardapio h4{
+    text-align: center;
+    margin:  5px 0 15px;
+    font-size: 25px;
+}
+.img__bolo{
+    margin-left: 2px;
+    border: 2px solid darkgray;
+    width: 300px;
+}
+.cardapio p {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 15px;
+}
+
+.menu{
+    display: flex;
+    height:auto;
+    width: 20%;
+    flex-wrap: wrap;
+    background: #f2d0e0;
+    margin-left: 0;
+    justify-content: space-between;
+    align-content: flex-start;
+    
+    
+}
+.menu div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+    text-align: justify;
+    height: 40px;
+}
+
+
+.menu h2 {
+    margin: 10px 10px;
+}
+
+#icon__home{
+    width: 40px;
+    height: 40px;
+    
+}
+#icon__seta {
+    width: 40px;
+    height: 40px; 
+    margin: 10px 10px;
+}
+.div-pai{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+
+.footer__section {
+    display: flex;
+    background: mediumvioletred;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
