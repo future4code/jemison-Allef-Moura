@@ -12,6 +12,7 @@ const PostContainer = styled.div`
   border: 1px solid gray;
   width: 300px;
   margin-bottom: 10px;
+  
 `
 
 const PostHeader = styled.div`
