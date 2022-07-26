@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "ba9ebcba-7518-42ad-9c20-27e67823ee8f",
+		"name": "Allef-jemison",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22375602"
+	},
+	"item": [
+		{
+			"name": "playlistCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "allef-souza-jemison",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"traps\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllPlaylist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "allef-souza-jemison",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "allef-souza-jemison",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"9b-bQldFfHoDGWr3jQ4hLuOFmNWxX8\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "73xbcb1a3btf"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "026fe8b73a25fc79a5f4996819aa895d"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 Jul 2022 21:55:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "155"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 2,\n        \"list\": [\n            {\n                \"id\": \"fd76c2e2-b806-4ce4-b7f5-4d46d07f5b87\",\n                \"name\": \"trap\"\n            },\n            {\n                \"id\": \"e559e5bc-2542-4976-9f91-36fd7f1a88d0\",\n                \"name\": \"traps\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "AddTrackToPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "allef-souza-jemison",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dior\", \r\n    \"artist\": \"Bin FT. Major RD\",\r\n    \"url\": \"https://www.youtube.com/watch?v=cE-mBCBuxYQ&ab_channel=BIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "e559e5bc-2542-4976-9f91-36fd7f1a88d0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlaylistTracks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "allef-souza-jemison",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "e559e5bc-2542-4976-9f91-36fd7f1a88d0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveTrackFromPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "allef-souza-jemison",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "e559e5bc-2542-4976-9f91-36fd7f1a88d0"
+						},
+						{
+							"key": "trackId",
+							"value": "176255a8-f70f-42a6-bec5-fee59a557ec7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "allef-souza-jemison",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "fd76c2e2-b806-4ce4-b7f5-4d46d07f5b87"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
