@@ -1,12 +1,24 @@
-import Home from "./components/Home";
+
+import styled from "styled-components";
+import { GlobalStyle } from "./GlobalStyled";
+import Router from "./components/router"
 
 
 function App() {
   return (
-    
-      <Home/>
-    
+    <Section>
+      <GlobalStyle/>
+      <Router/>
+    </Section>
   );
 }
 
 export default App;
+
+
+
+
+const Section = styled.section`
+  height: 90vh;
+
+`
