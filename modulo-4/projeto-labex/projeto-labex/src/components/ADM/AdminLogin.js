@@ -1,27 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../context/auth';
 
 
-function AdminHome() {
 
+function AdminLogin() {
+  const {authenticated, login} = useContext(AuthContext);
+
+  //Use State para adicionar estado aos inputs
   const [email, setEmail] = useState ('');
   const [password, setPassword] = useState ('');
 
+ 
+
+  
   const handleSubmit = (e) => {
     e.preventDefault()
-
+    
+    login(email,password);
     
   }
 
   const navigate = useNavigate();
-
-    const goToAdminHome = () => {
-      navigate ('/AdminHome')
-    } 
-  
-    const goToHome = () => {
-      navigate(-1)
+  const goToHome = () => {
+      navigate('/')
   }
 
 
@@ -29,6 +32,7 @@ function AdminHome() {
     <DivAdm>
       
       <FormContainer>
+      
         <ButtonHome onClick={goToHome}>Home</ButtonHome>
         <form onSubmit={handleSubmit}>
           <h1>Login Admin</h1>
@@ -40,7 +44,10 @@ function AdminHome() {
               id='email' 
               placeholder='Email'
               value={email}
-              onChange={(e) => setEmail(e.target.value)}/>
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
+              />
             </label>
           </div>
           <div> 
@@ -49,13 +56,16 @@ function AdminHome() {
               type="password" 
               name='password' 
               id='password' 
-              placeholder='Passworld'
+              placeholder='Password'
               value={password}
-              onChange={(e) => setPassword(e.target.value)}/>
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              pattern='^.{3,8}'
+              />
             </label>
           </div>
           <div className='divButton'>
-            <ButtonEnter onClick={goToAdminHome}>Enter</ButtonEnter>
+            <ButtonEnter type='submit'>Enter</ButtonEnter>
           </div>
         </form>
       </FormContainer>
@@ -63,7 +73,7 @@ function AdminHome() {
   )
 }
 
-export default AdminHome
+export default AdminLogin
 
 
 const DivAdm = styled.div `
@@ -80,7 +90,7 @@ const FormContainer = styled.section `
   display: flex;
   flex-direction: column;
   width: 600px;
-  min-height: 100vh;
+  margin-bottom: 100px;
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
@@ -113,6 +123,7 @@ const FormContainer = styled.section `
     width: 100%;
     max-width: 700px;
     padding: 8.5rem;
+    
   }
 
   button {
