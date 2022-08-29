@@ -33,7 +33,7 @@ function AdminLogin() {
       
       <FormContainer>
       
-        <ButtonHome onClick={goToHome}>Home</ButtonHome>
+        <ButtonHome onClick={goToHome}>HOME PAGE</ButtonHome>
         <form onSubmit={handleSubmit}>
           <h1>Login Admin</h1>
           <div>
@@ -65,7 +65,7 @@ function AdminLogin() {
             </label>
           </div>
           <div className='divButton'>
-            <ButtonEnter type='submit'>Enter</ButtonEnter>
+            <ButtonEnter type='submit'>ENTER</ButtonEnter>
           </div>
         </form>
       </FormContainer>
@@ -141,7 +141,7 @@ const ButtonHome = styled.button `
   color: white;
   background-color: black;
   font-family: 'Jolly Lodger', cursive;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
   margin-bottom: 30px;
   
@@ -166,7 +166,7 @@ const ButtonEnter = styled.button `
   color: white;
   background-color: black;
   font-family: 'Jolly Lodger', cursive;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
   margin-bottom: 30px;
   

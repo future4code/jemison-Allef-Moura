@@ -17,12 +17,12 @@ function Home() {
   return (
     <>
       <Header>
-        <Button onClick={goToUser}>List Trips </Button>
-        <Button onClick={goToAdm}>Sing in Adm</Button>
+        <Button onClick={goToUser}>TRAVEL LIST </Button>
+        <Button onClick={goToAdm}>SING IN ADM</Button>
       </Header>
       <Div>
-        <H1>LABEX ROAD TRIP </H1>
-        <Text2>Aonde você quer ir, é aonde te levamos!</Text2>
+        <H1>LABEX TRAVEL </H1>
+        <Text2>Aonde você quiser ir, é onde te levamos!</Text2>
       </Div>
     </>
   )
@@ -49,7 +49,7 @@ const Button = styled.button `
   color: white;
   background-color: black;
   font-family: 'Jolly Lodger', cursive;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
 
 

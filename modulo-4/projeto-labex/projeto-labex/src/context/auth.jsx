@@ -12,10 +12,10 @@ export const AuthProvider = ({children}) => {
     const [user, setUser] = useState (null);
     const [loading, setLoading] = useState(true);
     useEffect(() =>{
-      const revoceredUser = localStorage.getItem('user');
+      const recoveredUser = localStorage.getItem('user');
      
-        if (revoceredUser){
-          setUser(JSON.parse(revoceredUser));
+        if (recoveredUser){
+          setUser(JSON.parse(recoveredUser));
         }
         setLoading(false)
     },[]);
@@ -24,21 +24,21 @@ export const AuthProvider = ({children}) => {
     const login = async  (email, password)=> {
       const id = toast.loading("Please wait...")
       const response = await createSession(email, password).then((response)=>{
-        const loddedUser = response.data.user
+        const loadedUser = response.data.user
         const token = response.data.token
 
-        localStorage.setItem('user', JSON.stringify(loddedUser));
+        localStorage.setItem('user', JSON.stringify(loadedUser));
         localStorage.setItem('token', (token));   
             
-                 setUser(loddedUser)
+                 setUser(loadedUser)
                  navigate("/Admin")
-        toast.update(id, {render: "Login Already", type: "success", isLoading: false, closeOnClick: true, autoClose: 3000, hideProgressBar:true});
+        toast.update(id, {render: "Authorized Access", type: "success", isLoading: false, closeOnClick: true, autoClose: 3000, hideProgressBar:true});
       }).catch((error)=>{
-        toast.update(id, {render: "Try Again!", type: "error", isLoading: false, closeOnClick: true });
+        toast.update(id, {render: "Access Denied", type: "error", isLoading: false, closeOnClick: true });
       })
       
 
-        // api.defaults.headers.Authorization = `allef-souza-jemison ${token}`
+      
     
 
    

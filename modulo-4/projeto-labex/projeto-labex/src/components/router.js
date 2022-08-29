@@ -4,6 +4,8 @@ import AdminLogin from "./ADM/AdminLogin";
 import ListTrips from "./User/ListTrips";
 import Home from "./Home";
 import AdminHome from "./ADM/AdminHome";
+import ApplicationForm  from "./User/ApplicationForm"
+import CreateTravels from "./ADM/CreateTravel"
 import { AuthProvider, AuthContext } from "../context/auth";
 
 
@@ -36,6 +38,11 @@ function Router() {
             <Private>
               <AdminHome/>
             </Private>}/>
+            <Route exact path= "createtravels" element={
+            <Private>
+              <CreateTravels/>
+            </Private>}/>
+            <Route exact path="Subscribe" element={<ApplicationForm/>}/>
         </Routes>
       </AuthProvider>  
     </BrowserRouter>
