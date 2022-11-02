@@ -1,0 +1,14 @@
+{
+  "name": "package-json",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "",
+  "main": "nomes.js",
+  "scripts": {
+    "start":"node ./nomes.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

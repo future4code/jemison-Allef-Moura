@@ -1,0 +1,14 @@
+{
+  "name": "exercicio03",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "listOfTask.js",
+  "scripts": {
+    "start":"node ./listOfTask.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
