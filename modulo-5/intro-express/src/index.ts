@@ -42,8 +42,8 @@ app.get("/users",(req:Request, res:Response)=>{
 // exercicio 05
 
 type Post = {
-    userId:string,
-    id:string,
+    userId:string | number,
+    id:string |number,
     title:string,
     body:string
 }
