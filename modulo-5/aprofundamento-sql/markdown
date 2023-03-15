@@ -1,0 +1,27 @@
+## EXERCICIO 01 
+a) ```ALTER TABLE Actor DROP COLUMN salary;``` = remove the specify column.
+b)```ALTER TABLE Actor CHANGE gender sex VARCHAR(6);``` alter name of column of gender to sex
+c)```ALTER TABLE Actor CHANGE gender gender VARCHAR(255);``` error, beacause name of column not is gender.but if be the same name of column,this line of code alter the VARCHAR.
+d)```ALTER TABLE Actor CHANGE gender sex VARCHAR(100)``` 
+## EXERCICIO 02
+D)Dont give status error, but no insert nothing in table
+## EXERCICIO 03
+Done in MYSQL WORKBENCH
+## EXERCICIO 04
+a)```SELECT MAX (salary) FROM Actor``` get max salary from table
+b)```SELECT MIN (salary) FROM Actor WHERE gender = "female"``` get min salary from specify date on table 
+c)```SELECT COUNT(*) FROM Actor WHERE gender = "female"``` get all actors famale
+d)```SELECT SUM(salary) FROM Actor``` sum all salarys
+## EXERCICIO 05
+a) ```SELECT COUNT(*),gender FROM Actor GROUP BY gender``` this give me the numbers genders of the table ex. my table have 2 males and 1 female.
+b)```SELECT * FROM Actor WHERE gender = 'male' ORDER BY name ASC  ```
+c)```SELECT * FROM Actor WHERE gender = 'female' ORDER BY salary ASC LIMIT 3```order salary by ASC
+d)```SELECT * FROM Actor WHERE gender = 'male' ORDER BY salary ASC LIMIT 3```
+c)```SELECT AVG (salary), gender FROM Actor GROUP BY gender```
+## EXERCICIO 06
+a) ```ALTER TABLE Movies ADD playing_limit_date```
+b) ```ALTER TABLE Movies CHANGE avaliation rating FLOAT```
+c) ```UPDATE Movies SET playing_limit_date = "2020-12-31 WHERE Se Eu Fosse Voce = "001"```
+d)``` DELETE FROM Movies WHERE Se Eu Fosse Voce = "001" ``` add successfully, but dont inside on table, because the movie not exist
+
+
