@@ -1,0 +1,10 @@
+1.
+a) The method used is 200, as the method response is "OK"
+b) The entity used is "users", as the response of endpoint is users.
+
+2.
+a) Was passed by params, as the is data this optional
+b) Yes validation with IF and tratament of errors
+
+3.
+a) Here is used QUERY PARAMS
