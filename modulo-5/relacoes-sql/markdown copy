@@ -1,0 +1,31 @@
+## EXERCICIO 01 
+
+```SELECT * FROM Movies```
+```SELECT * FROM Rating```
+```CREATE TABLE Rating (id VARCHAR(255) PRIMARY KEY,comment TEXT NOT NULL,rate FLOAT NOT NULL,movie_id VARCHAR(255),FOREIGN KEY (movie_id) REFERENCES Movies(id))```    
+a) The FOREIGN KEY is the field that establishes the relationship between two tables. Thus, a column coressponds to the same column that is the primary key of another table.
+b)```INSERT INTO Rating (id, comment, rate, movie_id) VALUES ("003","bala",10,"003");```
+  ```INSERT INTO Rating (id, comment, rate, movie_id) VALUES ("002","show",10,"002");```
+  ```INSERT INTO Rating (id, comment, rate, movie_id) VALUES ("001","pika",10,"001");```
+
+c) When u try the query, the SQL say Invalid FOREIGN KEY
+
+d)```ALTER TABLE  Movie DROP COLUMN  Rating;```
+
+e)```DELETE FROM Movie WHERE id = "001"```
+
+## EXERCICIO 02 
+```CREATE TABLE MovieCast (movie_id VARCHAR(255),actor_id VARCHAR(255),FOREIGN KEY (movie_id) REFERENCES Movies(id),FOREIGN KEY (actor_id) REFERENCES Actor(id));```
+
+a) This table create a new table to add a cast on the movies, this table use 2 foreign keys that have ActorID and MovieID that is the same primary keys of another tables.
+
+```INSERT INTO MovieCast (movie_id, actor_id) VALUES ("001", "001")```
+```INSERT INTO MovieCast (movie_id, actor_id) VALUES ("002", "002")```
+```INSERT INTO MovieCast (movie_id, actor_id) VALUES ("003", "003")```
+```INSERT INTO MovieCast (movie_id, actor_id) VALUES ("003", "004")```
+```INSERT INTO MovieCast (movie_id, actor_id) VALUES ("001", "004")```
+c) invalid query
+d)we can delete successfuly
+## EXERCICIO 03
+a) The operator ON is to use the reference of the table
+b)```SELECT Movies.id, name, rate FROM Movies INNER JOIN Rating ON Movies.id = Rating.movie_id;```
